@@ -8,11 +8,11 @@ WORKDIR /eth-netstats
 
 RUN npm install -g grunt-cli
 
-COPY ./package.json /eth-netstats/package.json
+COPY ../package.json /eth-netstats/package.json
 
 RUN npm install
 
-COPY . /eth-netstats/
+COPY .. /eth-netstats/
 
 RUN grunt
 
