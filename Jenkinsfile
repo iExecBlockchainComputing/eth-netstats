@@ -2,7 +2,7 @@
 
 node('docker') {
     buildInfo = getBuildInfo()
-    buildSimpleDocker_v2(
+    buildSimpleDocker_v3(
         buildInfo: buildInfo,
         imageprivacy: 'private',
         dockerImageRepositoryName : 'netstats'
