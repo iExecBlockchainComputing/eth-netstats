@@ -164,7 +164,6 @@ api.on('connection', function (spark)
 						});
 
 						console.info('API', 'UPD', 'Update from:', data.id, 'for:', stats);
-						console.log("Getting charting 1 ...");
 						Nodes.getCharts();
 					}
 				}
@@ -197,7 +196,7 @@ api.on('connection', function (spark)
 						});
 
 						console.success('API', 'BLK', 'Block:', data.block['number'], 'from:', data.id);
-						console.log("Getting charting 2 ...");
+						console.log("Getting charting 2 ... => " ,'API', 'BLK', 'Block:', data.block['number'], 'from:', data.id);
 
 						Nodes.getCharts();
 					}
@@ -373,7 +372,6 @@ client.on('connection', function (clientSpark)
 	clientSpark.on('ready', function (data)
 	{
 		clientSpark.emit('init', { nodes: Nodes.all() });
-		console.log("Getting charting 3 ...");
 
 		Nodes.getCharts();
 	});
@@ -406,7 +404,6 @@ var nodeCleanupTimeout = setInterval( function ()
 		data: Nodes.all()
 	});
 
-	console.log("Getting charting 4 ...");
 
 	Nodes.getCharts();
 
