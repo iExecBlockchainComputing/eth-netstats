@@ -15,7 +15,7 @@ netStatsApp.controller('StatsCtrl', function($scope, $filter, $localStorage, soc
 	$scope.lastBlock = 0;
 	$scope.lastDifficulty = 0;
 	$scope.upTimeTotal = 0;
-	$scope.avgBlockTime = 12;
+	$scope.avgBlockTime = 0;
 	$scope.blockPropagationAvg = 0;
 	$scope.avgHashrate = 0;
 	$scope.uncleCount = 0;
