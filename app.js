@@ -164,7 +164,7 @@ api.on('connection', function (spark)
 						});
 
 						console.info('API', 'UPD', 'Update from:', data.id, 'for:', stats);
-						console.log("Getting charts .....");
+						
 						Nodes.getCharts();
 					}
 				}
