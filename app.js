@@ -196,7 +196,7 @@ api.on('connection', function (spark)
 						});
 
 						console.success('API', 'BLK', 'Block:', data.block['number'], 'from:', data.id);
-						console.log("Getting charting 2 ... => " ,'API', 'BLK', 'Block:', data.block['number'], 'from:', data.id);
+						// console.log("Getting charting 2 ... => " ,'API', 'BLK', 'Block:', data.block['number'], 'from:', data.id);
 
 						Nodes.getCharts();
 					}
