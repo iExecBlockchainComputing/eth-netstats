@@ -164,7 +164,6 @@ api.on('connection', function (spark)
 						});
 
 						console.info('API', 'UPD', 'Update from:', data.id, 'for:', stats);
-
 						Nodes.getCharts();
 					}
 				}
@@ -403,6 +402,7 @@ var nodeCleanupTimeout = setInterval( function ()
 		action: 'init',
 		data: Nodes.all()
 	});
+
 
 	Nodes.getCharts();
 
